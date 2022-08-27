@@ -1,11 +1,10 @@
-#ifndef SCREEN_H
-#define SCREEN_H
-
-#include <Arduino.h>
+#include "Arduino.h"
+#include <LCD_1602_RUS.h>
 
 class Screen {
-  public:
-	String getText();
-};
+    LCD_1602_RUS lcd;
 
-#endif
+    public:
+        Screen(LCD_1602_RUS lcd);
+        String getText();
+};
