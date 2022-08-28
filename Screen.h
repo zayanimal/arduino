@@ -6,5 +6,11 @@ class Screen {
 
     public:
         Screen(LCD_1602_RUS lcd);
-        String getText();
+
+        void init();
+        void printGreeting();
+        void printPotValue();
+
+    private:
+        int getPotValue();
 };
